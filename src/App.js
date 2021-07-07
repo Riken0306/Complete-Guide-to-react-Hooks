@@ -1,6 +1,8 @@
 import "./App.css";
+import DataFetching from "./hooks/useEffect/DataFetching";
 import HookCounterOne from "./hooks/useEffect/HookCounterOne";
 import HookMouse from "./hooks/useEffect/HookMouse";
+import IntervalHookCounter from "./hooks/useEffect/IntervalHookCounter";
 import MouseContainer from "./hooks/useEffect/MouseContainer";
 
 function App() {
@@ -8,7 +10,9 @@ function App() {
     <div className="App">
       {/* <HookCounterOne /> */}
       {/* <HookMouse /> */}
-      <MouseContainer />
+      {/* <MouseContainer /> */}
+      {/* <IntervalHookCounter /> */}
+      <DataFetching />
     </div>
   );
 }

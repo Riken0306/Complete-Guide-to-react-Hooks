@@ -17,3 +17,10 @@
 &rarr; By passing empty Dependency array useEffect can be called only once.
 
 &rarr; useEffect hook has a cleanup function that is used to remove subscrption of some event-handlers which are particularly unmounted.
+
+&rarr; Be careful while specifying empty dependency list. Previous state of variable can be used to encounter this issue.
+
+&rarr; Data can be fetched in using axios.
+
+- In useEffect axios.get(URL).then(//success).catch(//error) must be handled
+- Use this data from .JSON file and use as per your requirement by manuplating dependency list and cleanup function
