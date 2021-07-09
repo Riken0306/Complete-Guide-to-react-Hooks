@@ -42,3 +42,13 @@
 | array.reduce(reducer, initialValue)           | useReducer(reducer, initialState)                      |
 | singleValue = reducer(accumulator, itemValue) | newState reducer(currentState, action)                 |
 | reduce method returns a single value          | usereducer returns pair of values [newstate, dispatch] |
+
+### useState vs useReducer
+
+| Scenario                        | useState                | useReducer             |
+| ------------------------------- | ----------------------- | ---------------------- |
+| **Type of State**               | Number, String, Boolean | Object or array        |
+| **Number of state Transitions** | One or Two              | Too many               |
+| **Related state Transition**    | No                      | Yes                    |
+| **Business Logic**              | No Business Logic       | Complex Business Logic |
+| **Local vs global**             | Local                   | Global                 |
