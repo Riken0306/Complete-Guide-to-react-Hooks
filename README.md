@@ -35,7 +35,7 @@
 
 - It is alternative to useState. Rather useState is build using useReducer
 
-- reduce vs useReducer
+&rarr; reduce vs useReducer
 
 | reduce in Javascript                          | useReducer in React                                    |
 | --------------------------------------------- | ------------------------------------------------------ |
@@ -52,3 +52,14 @@
 | **Related state Transition**    | No                      | Yes                    |
 | **Business Logic**              | No Business Logic       | Complex Business Logic |
 | **Local vs global**             | Local                   | Global                 |
+
+## useCallback Hook
+
+**What?**
+&rarr; useCallback is a hook that will return a memorized version of callback function that only changes if on of the dependencies has changed
+
+**Why?**
+&rarr; It is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders
+
+**How?**
+&rarr; import useCallback hook which accepts 2 parameters first arrow function and second is dependency list. By this we must know what is dependency list and why use it.
