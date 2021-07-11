@@ -1,6 +1,13 @@
 import "./App.css";
 import React, { useReducer } from "react";
 
+// import Counter from "./hooks/useMemo/Counter";
+
+// import FocusInput from "./hooks/useRef/FocusInput";
+import HookTimer from "./hooks/useRef/HookTimer";
+import DocTitleOne from "./hooks/Custom Hooks/DocTitleOne";
+import DocTitleTwo from "./hooks/Custom Hooks/DocTitleTwo";
+
 // import ComponentC from "./hooks/useContext/ComponentC";
 // import DataFetching from "./hooks/useEffect/DataFetching";
 // import HookCounterOne from "./hooks/useEffect/HookCounterOne";
@@ -14,9 +21,9 @@ import React, { useReducer } from "react";
 // import ComponentB from "./hooks/useReducer/with_useContext/ComponentB";
 // import ComponentC from "./hooks/useReducer/with_useContext/ComponentC";
 
-import DataFetchingOne from "./hooks/useReducer/DataFetching/DataFetchingOne";
-import DataFetchingTwo from "./hooks/useReducer/DataFetching/DataFetchingTwo";
-import ParentComponent from "./hooks/useCallback/ParentComponent";
+// import DataFetchingOne from "./hooks/useReducer/DataFetching/DataFetchingOne";
+// import DataFetchingTwo from "./hooks/useReducer/DataFetching/DataFetchingTwo";
+// import ParentComponent from "./hooks/useCallback/ParentComponent";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -67,7 +74,15 @@ function App() {
       {/* <DataFetchingOne /> */}
       {/* <DataFetchingTwo /> */}
 
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+
+      {/* <Counter /> */}
+
+      {/* <FocusInput /> */}
+      {/* <HookTimer /> */}
+
+      <DocTitleOne />
+      <DocTitleTwo />
     </div>
   );
 }

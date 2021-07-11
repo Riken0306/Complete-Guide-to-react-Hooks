@@ -56,10 +56,27 @@
 ## useCallback Hook
 
 **What?**
-&rarr; useCallback is a hook that will return a memorized version of callback function that only changes if on of the dependencies has changed
+&rarr; useCallback is a hook that will return a **_memorized version of callback function_** that only changes if one of the dependencies has changed
 
 **Why?**
 &rarr; It is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders
 
 **How?**
 &rarr; import useCallback hook which accepts 2 parameters first arrow function and second is dependency list. By this we must know what is dependency list and why use it.
+
+## useMemo Hook
+
+&rarr; useMemo returns **_memoized version of value returned by a function_** that only changes if one of the dependencies has changed
+
+### Difference between useCallback and and useMemo
+
+- In other words, useCallback gives you referential equality between renders for functions. And useMemo gives you referential equality between renders for values.
+
+- useCallback and useMemo both expect a function and an array of dependencies. The difference is that useCallback returns its function when the dependencies change while useMemo calls its function and returns the result.
+
+- Since JavaScript has first-class functions, useCallback(fn, deps) is equivalent to useMemo(() => fn, deps).
+
+## Custom Hooks
+
+&rarr; A Custom Hook is basically a Javascript function whose name starts with "use"
+&rarr; A custom hook can also call other hook if required
